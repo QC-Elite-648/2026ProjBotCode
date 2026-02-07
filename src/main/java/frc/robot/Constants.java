@@ -9,6 +9,7 @@ import com.pathplanner.lib.config.PIDConstants;
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.geometry.Translation3d;
 import edu.wpi.first.math.util.Units;
+import edu.wpi.first.wpilibj.motorcontrol.Spark;
 import swervelib.math.Matter;
 
 /**
@@ -67,4 +68,54 @@ public final class Constants
     public static final int DRIVER_PORT         = 0;
     public static final int OPERATOR_PORT       = 1;
   }
+
+  public static class CanConstants
+  {
+    // CAN IDs
+    //Swerver motor 1 Front Right Neo Spark Max
+    public static final int SwerveFrontRightDriveMotorCanID  = 10;
+    public static final int SwerveFrontRightSteerMotorCanID  = 11;
+    public static final int CanCoderFrontRight                = 20;
+    
+    //Swerver motor 2 Back Right Neo Spark Max
+    public static final int SwerveBackRightDriveMotorCanID   = 12;
+    public static final int SwerveBackRightSteerMotorCanID   = 13;
+    public static final int CanCoderBackRight                = 21;
+
+    //swerver motor 3 Back Left Neo Spark Max
+    public static final int SwerveBackLeftDriveMotorCanID    = 14;
+    public static final int SwerveBackLeftSteerMotorCanID    = 15;
+    public static final int CanCoderBackLeft                 = 22;
+
+    //swerver motor 4 Front Left Neo Spark Max
+    public static final int SwerveFrontLeftDriveMotorCanID   = 16;
+    public static final int SwerveFrontLeftSteerMotorCanID   = 17;
+    public static final int CanCoderFrontLeft                = 23;
+
+    //Flywheel motors Vortex Spark Flex
+    public static final int FlywheelMotor1CanID              = 18;
+    public static final int FlywheelMotor2CanID              = 19;
+
+    // Indexer motor Rev Neo Spark Max
+    public static final int IndexerMotorCanID                = 28;
+
+    //Intake spin motors Vortex Spark Flex
+    public static final int IntakeSpinMotor1CanID            = 24;
+    public static final int IntakeSpinMotor2CanID            = 25;
+
+
+    //Intake deply motors Rev Neo Spark Max
+    public static final int IntakeDeployMotor1CanID          = 26;
+    public static final int IntakeDeployMotor2CanID          = 27;
+
+    //Hopper motor Rev Neo Spark Max 
+    //**needs updated to correct CAN ID if used */
+    public static final int HopperMotorCanID                 = 01;
+
+    //Climb motors Rev Neo Spark Max
+    public static final int ClimbDeployMotorCanID            = 29;
+    public static final int ClimbGoUpMotorCanID              = 30;
+  }
+
+
 }
