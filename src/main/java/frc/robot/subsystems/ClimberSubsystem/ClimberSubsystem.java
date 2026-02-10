@@ -15,18 +15,16 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.RobotContainer;
 
     public class ClimberSubsystem extends SubsystemBase{
-        
+        //setting up the motors
         private final SparkMax ClimbGoUpMotor = new SparkMax(CanConstants.ClimbGoUpMotorCanID, MotorType.kBrushless);
         private final SparkMax ClimbDeployMotor = new SparkMax(CanConstants.ClimbDeployMotorCanID, MotorType.kBrushless);
         
         private SparkMaxConfig ClimbGoUpMotorConfig = new SparkMaxConfig();
         private SparkMaxConfig ClimbDeployMotorConfig = new SparkMaxConfig();
 
-        
+        //limit switches to copy what 2024 did - may or may not be useful
         private final DigitalInput limitSwitchRight = new DigitalInput(0);
         private final DigitalInput limitSwitchLeft = new DigitalInput(1);
-
-
 
         public boolean getLimitSwitchRight()
         {
@@ -37,6 +35,16 @@ import frc.robot.RobotContainer;
         {
             return limitSwitchLeft.get();
         }
+            //speed
+        public void setSpeedClimbDeployMotor(double speed) 
+    {
+        ClimbDeployMotor.set(speed);
+    }
+    
+    public void setSpeedClimbGoUpMotor(                                                                                                                                                                                                                                 double speed) 
+    {
+        ClimbGoUpMotor.set(speed);                                                                                                                                                                                                                  
+    }
     }
 
 

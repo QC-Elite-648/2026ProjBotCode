@@ -22,6 +22,7 @@ import swervelib.SwerveInputStream;
 
 
 import frc.robot.Constants.OperatorConstants;
+import frc.robot.subsystems.ClimberSubsystem.ClimberSubsystem;
 import frc.robot.subsystems.swervedrive.*;
 import frc.robot.commands.SwervedriveCommands.auto.*;
 import frc.robot.commands.SwervedriveCommands.drivebase.*;
@@ -52,6 +53,7 @@ public class RobotContainer
    public static final PowerDistribution pdh = new PowerDistribution();
   //Define Subsystems
   public static SwerveSubsystem driveTrain = new SwerveSubsystem();
+  public static ClimberSubsystem climber = new ClimberSubsystem();
  
 
   //Define Controllers
