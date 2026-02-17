@@ -104,8 +104,9 @@ public class RobotContainer
     //To do: Set Buttons, Set Speeds, Verify Directions
 
     // Operator Controls 
- 
-     
+    climber.setDefaultCommand(new RunCommand(() -> {
+      climber.setSpeed(-operatorController.getLeftY());
+    }));
   }
   public void setMotorBrake(boolean brake)
   {
