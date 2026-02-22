@@ -6,7 +6,7 @@ import frc.robot.subsystems.ClimberSubsystem.*;;
 
 public class ClimberCommand extends Command
 {
-
+    
     private final double speed;
 
     public ClimberCommand(Double _speed)
@@ -21,8 +21,7 @@ public class ClimberCommand extends Command
     @Override
     public void execute() 
     {
-        RobotContainer.climber.setSpeedClimbDeployMotor(speed);
-        RobotContainer.climber.setSpeedClimbGoUpMotor(speed);
+        RobotContainer.climber.setSpeedClimbMotor(speed);
 
     }
 

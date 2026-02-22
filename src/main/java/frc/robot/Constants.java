@@ -113,8 +113,7 @@ public final class Constants
     public static final int HopperMotorCanID                 = 01;
 
     //Climb motors Rev Neo Spark Max
-    public static final int ClimbDeployMotorCanID            = 29;
-    public static final int ClimbGoUpMotorCanID              = 30;
+    public static final int ClimbMotorCanID               = 29;
   }
 
  public static final class ClimberConstants
