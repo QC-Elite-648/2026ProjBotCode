@@ -116,11 +116,16 @@ public final class Constants
     public static final int ClimbMotorCanID               = 29;
   }
 
- public static final class ClimberConstants
-  {
+  public static class Climb {
+    public static final double kGearRatio = 16.0;             // Example 16:1
+    public static final double kDrumDiameterInches = 1.25;    // Diameter of winch or sprocket
+    public static final double kMaxHeightInches = 18.0;      // Physical limit in inches
+    
+    //constants
+    public static final double currentMax = 1;
+    
     public static final int kClimber1CANId = 25;
     public static final int kClimber2CANId = 26;
-    public static final double currentMax = 1;
     public static final int kClimber1PDH = 14;
     public static final int kClimber2PDH = 15;
   }
